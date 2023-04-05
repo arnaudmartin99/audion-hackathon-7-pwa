@@ -1,10 +1,10 @@
 {
-  "name": "Dev'Coffee",
-  "short_name": "DevCoffee",
+  "name": "Audion",
+  "short_name": "Audion",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#fdfdfd",
-  "theme_color": "#db4938",
+  "background_color": "#ffffff",
+  "theme_color": "#ff005d",
   "orientation": "portrait-primary",
   "icons": [
     {

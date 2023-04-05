@@ -33,7 +33,7 @@ li {
 }
 
 h1 {
-  color: #e74c3c;
+  color: #ff005d;
   margin-bottom: 0.5rem;
 }
 .container {
@@ -74,7 +74,7 @@ h1 {
 
 .card--link {
   text-decoration: none;
-  background: #db4938;
+  background: #ff005d;
   color: #fff;
   padding: 0.3rem 1rem;
   border-radius: 20px;

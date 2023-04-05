@@ -1,58 +1,34 @@
 const container = document.querySelector(".container");
-const coffees = [
+const cards = [
   {
-    name: "Perspiciatis",
-    image: "images/coffee1.jpg"
+    name: "Podcast",
+    image: "images/podcast.png"
   },
   {
-    name: "Voluptatem",
-    image: "images/coffee2.jpg"
+    name: "Musique",
+    image: "images/music.png"
   },
   {
-    name: "Explicabo",
-    image: "images/coffee3.jpg"
-  },
-  {
-    name: "Rchitecto",
-    image: "images/coffee4.jpg"
-  },
-  {
-    name: " Beatae",
-    image: "images/coffee5.jpg"
-  },
-  {
-    name: " Vitae",
-    image: "images/coffee6.jpg"
-  },
-  {
-    name: "Inventore",
-    image: "images/coffee7.jpg"
-  },
-  {
-    name: "Veritatis",
-    image: "images/coffee8.jpg"
-  },
-  {
-    name: "Accusantium",
-    image: "images/coffee9.jpg"
+    name: "Radio",
+    image: "images/radio.png"
   }
 ];
-const showCoffees = () => {
+const generateCards = () => {
   let output = "";
-  coffees.forEach(
+  cards.forEach(
     ({ name, image }) =>
       (output += `
               <div class="card">
                 <img class="card--avatar" src=${image} />
                 <h1 class="card--title">${name}</h1>
-                <a class="card--link" href="#">Taste</a>
+                <a class="card--link" href="#">Ecouter</a>
               </div>
               `)
   );
   container.innerHTML = output;
 };
 
-document.addEventListener("DOMContentLoaded", showCoffees);
+document.addEventListener("DOMContentLoaded", generateCards);
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {
