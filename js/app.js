@@ -30,24 +30,6 @@ const generateCards = () => {
 
 document.addEventListener("DOMContentLoaded", generateCards);
 
-function randomNotification() {
-  const notifBody = `Notification body`;
-  const options = {
-    body: notifBody
-  };
-  new Notification("Notification title", options);
-  setTimeout(randomNotification, 5000);
-}
-
-const button = document.getElementById("Podcast");
-button.addEventListener("click", () => {
-  Notification.requestPermission().then((result) => {
-    if (result === "granted") {
-      randomNotification();
-    }
-  });
-});
-
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {
     navigator.serviceWorker
