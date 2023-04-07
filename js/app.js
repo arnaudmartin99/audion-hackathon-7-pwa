@@ -21,7 +21,7 @@ const generateCards = () => {
               <div class="card">
                 <img class="card--avatar" src=${image} />
                 <h1 class="card--title">${name}</h1>
-                <a class="card--link" href="#" id="${name}>Ecouter</a>
+                <a class="card--link" href="#">Ecouter</a>
               </div>
               `)
   );
